@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Client</title>
+</head>
+<body>
+    <p class="connection" id="connection" style="display:none">
+        Connection: Attempting to Connect
+    </p>
+
+    <div id="login-overlay">
+        <div class="login-popup">
+            <div class="login-container" id="login-box">
+                <input type="text" id="username" class="input-box" placeholder="Enter Username" />
+                <button class="glass-btn center" id="submit-btn">Enter Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chat" style="display:none;"></div>
+
+    <div class="chat-input" id="chat-input" style="display:none;">
+        <button class="chat-btn" id="choose-btn">Send to...</button>
+
+        <select id="sendTo" class="input-box" style="max-width: 150px; display:none;">
+            <option value="all">Everyone</option>
+        </select>
+
+        <input id="msg" class="input-box wrap" placeholder="Enter a message..." />
+        <button class="chat-btn" id="send">Send</button>
+    </div>
+</body>
+</html>
