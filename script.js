@@ -145,7 +145,7 @@ function handleMessage(e) {
         return;
     }
 
-    if (data.type === "update") {
+    if (p.type === "update") {
         location.reload(true);
     }
 
